@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,700;1,800;1,900&display=swap");
 @import "./components/Button/Button.css";
 @import "./components/Header/Header.css";
+@import "./components/Page/ItemPage.css";
+@import "./components/Main/Presentation.css";
 @import "./components/Footer/Footer.css";
 @import "./components/Modal/Modal.css";
 @import "./components/Categories/Categories.css";
@@ -11,13 +13,15 @@
 }
 
 body {
-  /* min-width: 1200px; */
-  /* overflow-x: hidden; */
   background: #fff;
   color: #222;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  /* overflow-x:hidden; */
+}
+
+a {
+  color: #222;
+  text-decoration: none;
 }
 
 .wrapper {
@@ -55,10 +59,6 @@ main .add-to-favorite {
   cursor: pointer;
   font-weight: 600;
   transition: transform 500ms ease;
-}
-
-.favorite .selected {
-  color: #ffcc00;
 }
 
 main .add-to-favorite:hover {

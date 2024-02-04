@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import { FaStar } from "react-icons/fa";
-import { Button } from "../Button/Button";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { FaStar } from 'react-icons/fa';
+import { Button } from '../Button/Button';
 
 export class Item extends Component {
   constructor(props) {
@@ -23,14 +23,14 @@ export class Item extends Component {
       <div className="item">
         <div className="add-to-favorite">
           <FaStar
-            className={`star-favorite ${isFavorite ? "selected" : ""}`}
+            className={`star-favorite ${isFavorite ? 'selected' : ''}`}
             text="Add to favorite"
             onClick={this.handleAddToFavorite}
           />
         </div>
         <h2>{item.name}</h2>
         <p>{item.article}</p>
-        <img src={"./img/" + item.img} alt={item.name} />
+        <img src={'./img/' + item.img} alt={item.name} />
         <p>{item.description}</p>
         <b>{item.price}</b>
         <p>{item.category}</p>
